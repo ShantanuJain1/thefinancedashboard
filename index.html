@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <script src="obfuscated.js"> </script>
+</head>
+
+<body>
+    <div class="box" id="box">
+        <h1>
+            The Finance Dashboard
+        </h1>
+        <input type="text" name="" placeholder="Enter Username" id="username">
+        <input type="password" name="" placeholder="Enter Password" id="password" onkeypress="validatekeypress()">
+        <input id="loginbutton" type="submit" name="" value="Login" onclick="login()">
+        <span id="telegram">Telegram to Get Access!</span><br>
+        <a id='link' href="https://telegram.me/financeDashboard" title="To get access ping us on Telegram!" target="_blank"><img id='img' src="data:image/svg+xml;base64,
+            PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z
+            yIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZGVmcz48bGluZ
+            WFyR3JhZGllbnQgeDE9IjMyLjI4Mzk3IiB5MT0iMzIuMjgzOTciIHgyPSIxMzkuNzE2MDMiIHkyPSIxMzkuNzE2MDMiIGdyYWRpZW50V
+            W5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzNiZWYwIj48L3N0b
+            3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGE4NWQ5Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsb
+            D0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9
+            rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9ud
+            C1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1
+            vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNODYsMTU5LjFjLTQwLjM3MjA
+            yLDAgLTczLjEsLTMyLjcyNzk4IC03My4xLC03My4xdjBjMCwtNDAuMzcyMDIgMzIuNzI3OTgsLTczLjEgNzMuMSwtNzMuMXYwYzQwLjM3MjAyLDAgNzMuM
+            SwzMi43Mjc5OCA3My4xLDczLjF2MGMwLDQwLjM3MjAyIC0zMi43Mjc5OCw3My4xIC03My4xLDczLjF6IiBmaWxsPSIjMmVjYzcxIj48L3BhdGg+PGc+
+            PHBhdGggZD0iTTE2MS45NjY2Nyw4NmMwLDQxLjk1MjU5IC0zNC4wMTQwNyw3NS45NjY2NyAtNzUuOTY2NjcsNzUuOTY2NjdjLTQxLjk1MjU5LDAg
+            LTc1Ljk2NjY3LC0zNC4wMTQwNyAtNzUuOTY2NjcsLTc1Ljk2NjY3YzAsLTQxLjk1MjU5IDM0LjAxNDA4LC03NS45NjY2NyA3NS45NjY2NywtNzUuOTY
+            2NjdjNDEuOTUyNTksMCA3NS45NjY2NywzNC4wMTQwOCA3NS45NjY2Nyw3NS45NjY2N3oiIGZpbGw9InVybCgjY29sb3ItMSkiPjwvcGF0aD48cGF0
+            aCBkPSJNMzMuMjc1MzQsODMuOTcxNjljMzAuOTc1NDEsLTE0LjAzNDg0IDY3LjM1NTg1LC0yOS4yNjIzNiA3Mi45NTgzOSwtMzEuNDY1MzljMTIu
+            MzUyMTgsLTQuODU4MDcgMTcuNzM4MjIsMC4xMDYzNSAxNi44OTQ5OSw4LjAyNTg4Yy0xLjAzNjk0LDkuNzA0NzQgLTUuOTUxOTksMzcuOTQ1MzUgLT
+            guOTc1NDYsNTguMTc5MDdjLTEuNzcwMDIsMTEuODM5NCAtOC4xODE2MSwxNS40NjY4MSAtMTUuNDE3NDMsMTAuODc0NjNjLTUuNDg4NTksLTMuNDgzM
+            DcgLTI0LjM1ODcxLC0xNS44MzkwNSAtMjkuMzIzMTMsLTIwLjA2MjhjLTMuMzg0MzEsLTIuODc5MTQgLTUuNzQzMDgsLTYuMTA3NzIgLTMuMzQyNTMsLTk
+            uMzk3MDhjMC43MDI2OSwtMC45NjA5OCAyLjQ5OTMsLTIuODk4MTMgMy40OTgyNiwtMy44NjI5MWM1LjAxLC00Ljg1NDI3IDQuMzMzOSwtNS44OTg4MSAtMS4
+            3MjQ0NCwtMS41NjQ5MWMtMC43MjE2OCwwLjUxNjU3IC00LjkwNzQ1LDMuNTUxNDQgLTYuNjI4MDksNC42OTg1NGMtNC4yMTYxNSwyLjgxMDc3IC04LjA5NDI1L
+            DIuOTYyNyAtMTQuNjY5MTYsMC43MjkyOGMtNS4zNzg0NCwtMS44MjcgLTEwLjU0NDE3LC0zLjIzNjE4IC0xMy44MDMxNCwtNC42NDUzNmMtNC41MDEwMiwtMS4
+            5NDg1NSAtNi4yMjU0NywtOC40NDc0OSAwLjUzMTc3LC0xMS41MDg5NXoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMDUiPjwvcGF0aD48cGF0aCBkPSJNMz
+            UuOTk4NzQsODQuNDQ2NDhjMjguNzYwOTgsLTEyLjg1NzM2IDY0LjEzMTA2LC0yNy41OTEwOSA2OS4zMDQzOSwtMjkuNjc2MzhjMTIuMzk3NzYsLTUuMDA2MiAxNi4
+            5NTk1NiwtMi4wMzU5MSAxNS42MjYzNCw3LjYzODQ1Yy0xLjIzODI2LDguOTU2NDcgLTUuNjMyOTMsMzYuNjY5MTEgLTguNzEzMzgsNTUuMjQ2NzZjLTEuODE1NiwxMC
+            45MzU0IC03LjExODA4LDEzLjM0MzU1IC0xNC4wMjM0NSw4Ljg3NjdjLTQuMzI2MywtMi43ODc5OCAtMjEuNzM3ODYsLTE0LjI1ODk0IC0yNS45NjE2MSwtMTcuNTk3Njh
+            jLTMuMjY2NTcsLTIuNTc5MDcgLTYuNjUwODgsLTUuNTU2OTYgLTIuNjk2ODIsLTkuODY4MDdjMS4zMjE4MiwtMS40Mzk1NyA4LjYyMjIyLC04LjQ4NTQ4IDE0LjA4MDQ
+            yLC0xMy43MjcxOGMzLjE2NDAxLC0zLjA0MjQ2IDIuMDM1OTEsLTQuNTQyODEgLTEuNzgxNDIsLTEuOTI5NTVjLTcuMDAwMzMsNC43OTcyOSAtMTguNDUyMywxMi4zOTAx
+            NiAtMjAuNDk1ODEsMTMuNzY4OTZjLTMuODkzMjksMi42MjA4NSAtNy41NTEwOSwzLjI1MTM3IC0xMy45MTcwOSwxLjI0OTY1Yy01LjAxNzYsLTEuNTgwMTEgLTkuODY0Mj
+            csLTMuMTEwODMgLTEyLjM5MDE2LC00LjA5NDZjLTUuNjQ0MzIsLTIuMTg3
+            ODQgLTUuNzIwMjksLTYuODk3NzcgMC45Njg1OCwtOS44ODcwNnoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMDciPjwvcGF0aD48c
+            GF0aCBkPSJNMzguNzIyMTUsODQuOTI1MDdjMjYuNTUwMzUsLTExLjY3OTg3IDYwLjkwNjI4LC0yNS45MTk4MyA2NS42NTAzOSwtMjcuOD
+            kxMTZjMTIuNDM5NTQsLTUuMTU4MTQgMTYuMjU2ODcsLTQuMTcwNTcgMTQuMzUzOSw3LjI1NDgyYy0xLjM2NzQsOC4yMTIgLTUuMzEwMD
+            csMzUuMzk2NjcgLTguNDU1MDksNTIuMzE4MjRjLTEuODY0OTgsMTAuMDM1MiAtNi4wNTA3NCwxMS4yMjQwOCAtMTIuNjI5NDYsNi44ODI
+            1OGMtMy4xNjQwMSwtMi4wODkwOCAtMTkuMTM2LC0xMi42NTIyNSAtMjIuNjAzODgsLTE1LjEzMjU2Yy0zLjE2NDAxLC0yLjI2MDAxIC0
+            3LjUyODMsLTQuOTc5NjIgLTIuMDU0OSwtMTAuMzM1MjdjMS45NDg1NSwtMS45MDY3NiAxNC43MTQ3NCwtMTQuMDk5NDEgMjQuNjYyNTg
+            sLTIzLjU4NzY1YzEuMzAyODMsLTEuMjQ1ODUgLTAuMzM0MjUsLTMuMjkzMTUgLTEuODM4MzksLTIuMjk0MTljLTEzLjQwODEyLDguODkx
+            OSAtMzEuOTk3MTYsMjEuMjMyNjggLTM0LjM2MzUyLDIyLjgzOTM4Yy0zLjU3NDIzLDIuNDI3MTMgLTcuMDA3OTIsMy41NDAwNSAtMTMuM
+            TY4ODIsMS43NzAwMmMtNC42NTY3NiwtMS4zMzcwMSAtOS4yMDMzNiwtMi45MzIzMSAtMTAuOTczMzgsLTMuNTQwMDVjLTYuODE4MDEsL
+            TIuMzM5NzcgLTUuMTk5OTIsLTUuMzcwODQgMS40MjA1OCwtOC4yODQxN3oiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3
+            ZnPg=="><br>
+        <span id="message"></span>
+        <span id="cipher"></span>
+    </div>
+    <iframe id="frame" SECURITY="restricted" src="javascript:;" frameborder="0" allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;display: none;"></iframe>
+    
+</body>
+</html>
